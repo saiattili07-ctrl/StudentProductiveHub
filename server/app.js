@@ -22,11 +22,12 @@ app.use(helmet());
 // Allow only our frontend to call the API, and allow cookies
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://student-productive-hub-pk4s.vercel.app",
-    ],
-    credentials: true,
+origin: [
+  "http://localhost:5173",
+  "https://student-productive-hub-pk4s.vercel.app",
+  "https://student-productive-hub-pk4s-nix36nfrr-sais-projects-87f0bc83.vercel.app"
+],
+credentials: true,
   }),
 );
 
